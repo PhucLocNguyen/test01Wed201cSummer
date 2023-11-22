@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+    --primary-color: rgb(39, 116, 204);
+  --gray: rgba(255, 255, 255, 0.7);
+  --white: rgb(255, 255, 255);
+}
+.flex {
+  display: flex;
+}
+.flex-space-evenly {
+  justify-content: space-evenly;
+}
+.flex-space-between {
+  justify-content: space-between;
+}
+.flex-space-around{
+    justify-content: space-around;
+}
+.flex-center {
+  justify-content: center;
+}
+.gap-row {
+  gap: 10px;
+}
+/* Header */
+#header {
+  flex-direction: row;
+}
+#header > div{
+    padding: 0 30px;
+}
+#logoContainer a img{
+    width: 80px;
+    object-fit: cover;
+}
+#header .menu-wrapper{
+    width: 100%;
+}
+#header .menu-wrapper ul{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    height: 100%;
+    align-items: center;
+    list-style-type: none;
+}
+#header .menu-wrapper ul > li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.searchingForm .flex{
+gap: 5px;
+align-items: center;
+height: 100%;
+}
+.searchingForm input[type='text']{
+    padding: 3px 5px;
+}
+.searchingForm button[type='submit']{
+    background:#333;
+    color: var(--white);
+    padding: 3px 5px;
+}
+/* Banner Section */
+.bannerSection{
+max-width: 100%;  
+margin-bottom: 30px;  
+}
+.bannerSection img{
+    width: 100%;
+    object-fit: cover;
+}
+/* Iphone Section */
+.section{
+    padding:30px;
+}
+h1{
+    color: red;
+    text-align: center;
+}
+.detailProduct{
+    justify-content: center;
+    gap: 30px;
+}
+.detailProduct div{
+    padding: 5px;
+    box-shadow: 1px 1px 10px #333;
+}
+.detailProduct img{
+    padding-bottom: 30px;
+    height: 600px;
+    width: 660px;
+    object-fit: fill;
+}
+.detailProduct h2{
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+.detailProduct #information p{
+    line-height: 30px;
+border-bottom: 1px solid rgba(51, 51, 51, 0.171);    
+margin-bottom: 15px;
+}
+/* Accessories */
+#accessories{
+    position: relative;
+}
+#accessories div img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+#accessories > div{
+    box-shadow: 1px 1px 10px;
+}
+#accessories> div >div{
+    background: orange;
+    color: var(--white);
+    position: relative;
+   text-align: center;
+   padding: 10px 30px;
+   opacity: 0.5;
+   transition: opacity 0.3s ease-in-out
+}
+
+#accessories> div:hover >div{
+   opacity: 1;
+}
+
+/* Footer */
+#footer {
+  background-color: var(--primary-color);
+  padding: 15px 60px;
+}
+#footer .title {
+  color: var(--white);
+}
+
+#footer .col :not(.title) {
+  text-decoration: none;
+  color: var(--gray);
+}
+#footer .col {
+  display: flex;
+  flex-direction: column;
+}
